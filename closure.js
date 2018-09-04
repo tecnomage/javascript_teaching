@@ -9,7 +9,6 @@ function closure(){
     //var item = helpText[i];
     //document.getElementById(item.id).onfocus = makeHelpCallback(i);
     var teste=(i)=>{
-      
       {
         console.log(i);
       }
@@ -17,8 +16,8 @@ function closure(){
 
     teste(i);
      
-    //console.log('chamando funcao');
-    //makeHelpCallback(i)
+    console.log('chamando funcao');
+    makeHelpCallback(i)
   }
 }
 
