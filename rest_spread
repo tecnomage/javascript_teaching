@@ -1,0 +1,23 @@
+function teste(...nome){
+    console.log(nome);
+    let spread = nome;
+    console.log(spread);
+    //nome.map(num => console.log(num));
+}
+
+
+let meu= [1,2,3,4,5];
+teste(meu);
+
+//Spread
+function sum(x, y, z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+console.log(sum(...numbers));
+// expected output: 6
+
+console.log(sum.apply(null, numbers));
+// expected output: 6
