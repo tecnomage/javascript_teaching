@@ -1,4 +1,4 @@
-const arrow = (...x)=> x.reduce((acc,atual)=> acc+=atual
+const arrow = (...x)=> (total,acc) => x.reduce((acc,atual)=> acc+=atual
 )
                   
                     
