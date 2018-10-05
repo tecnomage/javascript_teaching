@@ -1,0 +1,1 @@
+var multi = (n) => (m) => (n * m)(...args);
