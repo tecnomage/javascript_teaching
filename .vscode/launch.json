@@ -9,6 +9,19 @@
             "request": "launch",
             "name": "Executar Programa",
             "program": "${workspaceFolder}/reduceRightComposition.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "arrow",
+            "program": "${workspaceFolder}/arrow.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "reduce_learn",
+            "program": "${workspaceFolder}/reduceRight_learn.js"
         }
+
     ]
 }

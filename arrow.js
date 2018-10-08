@@ -1,16 +1,7 @@
-const arrow = (...x)=> (total,acc) => x.reduce((acc,atual)=> acc+=atual
-)
-                  
-                    
-                       
-//var testeReduce = arrow(5)(1);
-console.log(arrow(5,4));
+//const arrow = (...x) => (total)=> x.reduce((acc,atual)=>acc+=atual+total);
+const arrow = (...x) => (total)=> x.reduce((acc,atual)=>acc+=atual+total);
 
+var testeReduce = arrow(10,4,5,6)(20);
+console.log(testeReduce);
+//console.log(arrow(5,4));
 
-
-const waterfall = (...functions) => (callback, ...args) =>
-    functions.reduceRight(
-    (composition, fn) => 
-    (...results) => fn(composition, ...results),
-    callback
-    )(...args);

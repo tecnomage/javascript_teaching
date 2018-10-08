@@ -8,21 +8,27 @@ const waterfall = (...functions) => (callback, ...args) =>
 const randInt = max => Math.floor(Math.random() * max)
 
 const add5 = (callback, x) => {
-  setTimeout(callback, randInt(10), x + 5);
+    console.log(callback)
+    setTimeout(callback, randInt(10), x + 5);
 };
 const mult3 = (callback, x) => {
+    console.log(callback)
   setTimeout(callback, randInt(10), x * 3);
 };
 const sub2 = (callback, x) => {
+    console.log(callback)
   setTimeout(callback, randInt(10), x - 2);
 };
 const split = (callback, x) => {
+    console.log(callback)
   setTimeout(callback, randInt(10), x, x);
 };
 const add = (callback, x, y) => {
-  setTimeout(callback, randInt(10), x + y);
+    console.log(callback)
+    setTimeout(callback, randInt(10), x + y);
 };
 const div4 = (callback, x) => {
+    console.log(callback)
   setTimeout(callback, randInt(10), x / 4);
 };
 
