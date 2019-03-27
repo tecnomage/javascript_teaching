@@ -2,7 +2,7 @@
     // Use IntelliSense to learn about possible attributes.
     // Passe o mouse para ver as descrições dos atributos existentes.
     // Para obter mais informações, visite: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
+    "version": "0.4.0",
     "configurations": [
         {
             "type": "node",
@@ -21,7 +21,12 @@
             "request": "launch",
             "name": "reduce_learn",
             "program": "${workspaceFolder}/reduceRight_learn.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "reduce_inverso",
+            "program": "${workspaceFolder}/reduceInverso.js"
         }
-
     ]
 }
