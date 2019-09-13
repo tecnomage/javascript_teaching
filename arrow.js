@@ -1,7 +1,10 @@
 //const arrow = (...x) => (total)=> x.reduce((acc,atual)=>acc+=atual+total);
-const arrow = (...x) => (total)=> x.reduce((acc,atual)=>acc+=atual+total);
+//const arrow = (...x) => (total)=> x.reduce((acc,atual)=>acc+=atual+total);
+arrow = f => (x => f(x));
 
-var testeReduce = arrow(10,4,5,6)(20);
-console.log(testeReduce);
+//novoconsole = n => console.log(n)
+
+arrow(console.log)(2);
+
 //console.log(arrow(5,4));
 

@@ -19,8 +19,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "reduce_learn",
-            "program": "${workspaceFolder}/reduceRight_learn.js"
+            "name": "Y combinator",
+            "program": "${workspaceFolder}/Ycombinator.js"
         },
         {
             "type": "node",
