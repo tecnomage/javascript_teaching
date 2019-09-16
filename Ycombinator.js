@@ -7,5 +7,8 @@ console.log(Y(factorial_gen)(19));
 //same principle
 const n = x => x.toUpperCase();
 
-arrow = f => x => n => f(n(x));
+arrow = f => (x => {return x +10;})(n => f(n(x)));
+
+
+
 arrow(console.log)("2")(x => x.toUpperCase());
