@@ -27,3 +27,6 @@ const exponent =
   );
 
 console.log(exponent(2, 9))
+
+
+//Y = λf.(λx.f (x x)) (λx.f (x x))

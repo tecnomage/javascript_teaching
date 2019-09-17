@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Executar Programa",
-            "program": "${workspaceFolder}/reduceRightComposition.js"
+            "program": "${workspaceFolder}/mockingBird.js"
         },
         {
             "type": "node",
