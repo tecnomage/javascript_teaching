@@ -14,7 +14,7 @@
             "type": "node",
             "request": "launch",
             "name": "arrow",
-            "program": "${workspaceFolder}/arrow.js"
+            "program": "${workspaceFolder}/Ycombinator.js"
         },
         {
             "type": "node",
