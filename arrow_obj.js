@@ -1,18 +1,45 @@
-var cat = {
+let cat = {
+  nome: 'vinicius', 
   lives: 9,
-  jumps: () => {
-     console.log('entrou')
-    this.lives--;
-  },
-  jump : function(){
+  
+  usavida : function(){
       this.lives--;
-  }.bind(this)
+  }
+
+
+};
+
+const pulo = () => {
+  //nao pega o this
+    this.lives--;
+};
+
+function salto() {
+  this.lives--;
 }
 
-// var catThis = cat.jumps;
+function ola(){
+    console.log('ola mu kiridu ' + this.nome)
+}
 
-// catThis();
+const hello = () => {
+    //nao pega o this
+    console.log('ola mu kiridu ' + this.nome)
+}
 
+
+//const decrementa = salto.bind(cat);
+
+const decrementa = cat.usavida.bind(cat);
+
+const dizOi = ola.bind(cat)
+
+dizOi();
+
+decrementa();
+decrementa();
+
+console.log(cat.lives);
 // console.log(cat.lives);
 
 // const catdecrementa = catThis.bind(cat);
@@ -21,17 +48,13 @@ var cat = {
 
 // console.log(cat.lives);
 
-var teste = cat;
-console.log(teste.lives)
+
+//.jump();
+//console.log(teste.lives)
 //cat.jumps.bind(this.cat)
 //teste();
-teste.jumps();
-teste.jumps();
 
 // var decre = teste.bind(this)
 // decre();
 // decre();
-
-console.log(teste.lives);
-
 
