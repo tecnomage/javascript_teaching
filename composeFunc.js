@@ -1,22 +1,29 @@
-//const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
-//https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1
-const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
+const compose = (...fns) => x =>
+                fns.reduceRight((y, f) => f(y),x);
+
 
 
 function soma1(x) {
-  console.log("ok");
+  console.log(x);
   return x + 1;
 }
 
 function soma3(x) {
-  return x + 3;
+    console.log(x);
+    return x + 3;
 }
 
 function soma4(x) {
+ console.log(x)
   return x + 4;
 }
 
-const teste = x => compose(soma1, soma3, soma4(1));
+const soma1C= n => n+1;
+const soma3C= n => n+3;
+const soma4C= n => n+4;
 
-let saida = teste();
-console.log(saida)
+const teste =  compose(soma1, soma3, soma4);
+
+console.log(teste(4))
+
+//console.log(saida);
