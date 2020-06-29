@@ -18,10 +18,12 @@
       low = position+1;
       console.log(low)
       console.log(position)
+      //chamada recursiva
       interpolation(number,array,low,high)
           } else {
       console.log(high)
       high = position+1;
+      //chamada recursiva
       interpolation(number,array,low,high)
     }
     tentativas++;
